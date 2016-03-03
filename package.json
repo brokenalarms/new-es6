@@ -1,0 +1,44 @@
+{
+  "name": "core-template",
+  "version": "0.0.2",
+  "description": "Base template with core components for SDK",
+  "main": "frontend",
+  "authors": [
+    "antkozlo@cisco.com",
+    "danilawr@cisco.com"
+  ],
+  "platform": {
+    "desktop": {
+      "frontend": {
+        "type": "angular1",
+        "path": "./frontend/desktop",
+        "port": 4003,
+        "tasks": ""
+      },
+      "server": {
+        "port": 5004
+      },
+      "native": {},
+      "bundler": {
+        "type": "browserify"
+      }
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@cto-github.cisco.com:CTAO-XD-SDK/core-template.git"
+  },
+  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "incv": "npm version patch -m 'Version incremented to %s'",
+    "commit": "git add . && git commit -m'version tagging inc'",
+    "push": "git push && git push --tags",
+    "gitoutahere": "npm run commit && npm run incv && npm run push"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "xd-gulp-tasks": "git+ssh://git@cto-github.cisco.com:anthliu/xd-gulp-tasks.git#refactor3"
+  },
+  "dependencies": {}
+}
