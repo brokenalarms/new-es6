@@ -32,9 +32,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "incv": "npm version patch -m 'Version incremented to %s'",
-    "coa": "git add -a && git commit -a -m",
-    "push": "git push && git push --tags",
-    "gitoutahere": "npm run commit && npm run incv && npm run push"
+    "coa": "git add -A && git commit -m",
+    "push": "git push --follow-tags",
+    "gitoutahere": "npm run coa && npm run incv && npm run push"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
