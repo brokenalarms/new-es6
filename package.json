@@ -8,8 +8,8 @@
     "coa": "git add -A && git commit -m'fast commit'",
     "push": "git push --follow-tags",
     "gitoutahere": "npm run coa && npm run incv && npm run push",
-    "build": "browserify --debug -t [ babelify --presets [ es2015 ] ] src/index.js -o bundle.js",
-    "watch": "watchify --debug -t [ babelify --presets [ es2015 ] ] src/index.js -o bundle.js"
+    "build": "browserify --debug -t [ babelify --presets [ es2015 ] ] src/index.js -o dist/bundle.js",
+    "watch": "watchify --debug -t [ babelify --presets [ es2015 ] ] src/index.js -o dist/bundle.js"
   },
   "repository": {
     "type": "git",
