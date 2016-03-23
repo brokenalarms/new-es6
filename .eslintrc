@@ -1,23 +1,8 @@
 {
-    "extends": "eslint-config-airbnb",
-    "parser": "babel-eslint",
+    "extends": "airbnb",
     "rules": {
-        "no-var": 0,
-        "prefer-template": 0,
-        "object-curly-spacing": 0,
-        "comma-dangle": 0,
-        "object-shorthand": 0,
-        "max-len": 0,
-        "eqeqeq": 1,
-        "prefer-const": 0,
-        "strict": 0,
-        "no-use-before-define": 1,
         "no-unused-vars": 1,
-        "no-trailing-spaces": 1,
-        "comma-dangle": 1,
-        "default-case": 1,
-        "no-param-reassign": 1,
-        "indent": 0,
-        "padded-blocks": 0
+        "no-use-before-define": 0,
+        "indent": [2, 4]
     }
 }
