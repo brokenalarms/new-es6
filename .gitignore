@@ -1,6 +1,7 @@
 .idea
 .iml
 lib
+dist
 node_modules
 *.sublime-project
 *.sublime-workspace
